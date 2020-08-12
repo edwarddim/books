@@ -16,12 +16,12 @@ import com.edwardim.dbdemo.services.BookService;
 @RestController
 public class BooksApi {
 	
-    private final BookService bookService;
-    
-    public BooksApi(BookService bookService){
-        this.bookService = bookService;
-    }
-    
+	private final BookService bookService;
+	
+	public BooksApi(BookService bookService) {
+		this.bookService = bookService;
+	}
+	
     @RequestMapping("/api/books")
     public List<Book> index() {
         return bookService.getAllBooks();

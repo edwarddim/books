@@ -23,7 +23,7 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Size(min = 5, max = 200)
+	@Size(min = 5, max = 200, message="TITLE BETWEEN 5 AND 200")
 	private String title;
 	@Size(min = 5, max = 200)
 	private String description;

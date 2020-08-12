@@ -46,7 +46,6 @@ public class BookService {
 	}
 //	DELETING A BOOK BY ID
 	public void deleteBook(Long id) {
-		// TODO Auto-generated method stub
 		this.bookRepo.deleteById(id);
 	}
 }
